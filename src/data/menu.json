@@ -1,0 +1,191 @@
+{
+  "categories": [
+    { "id": "fried-chicken", "name": "炸雞類", "displayOrder": 1 },
+    { "id": "side-dishes", "name": "配菜小吃", "displayOrder": 2 },
+    { "id": "beverages", "name": "飲料", "displayOrder": 3 }
+  ],
+  "items": [
+    {
+      "id": "chicken-steak-large",
+      "categoryId": "fried-chicken",
+      "name": "大雞排",
+      "description": "酥脆外皮，多汁肉質",
+      "price": 65,
+      "available": true,
+      "options": [
+        {
+          "id": "spicy-level",
+          "name": "辣度",
+          "type": "single",
+          "required": true,
+          "choices": [
+            { "id": "no-spicy", "label": "不辣", "priceModifier": 0 },
+            { "id": "mild", "label": "微辣", "priceModifier": 0 },
+            { "id": "medium", "label": "中辣", "priceModifier": 0 },
+            { "id": "hot", "label": "大辣", "priceModifier": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-steak-small",
+      "categoryId": "fried-chicken",
+      "name": "小雞排",
+      "description": "份量適中，一樣美味",
+      "price": 50,
+      "available": true,
+      "options": [
+        {
+          "id": "spicy-level",
+          "name": "辣度",
+          "type": "single",
+          "required": true,
+          "choices": [
+            { "id": "no-spicy", "label": "不辣", "priceModifier": 0 },
+            { "id": "mild", "label": "微辣", "priceModifier": 0 },
+            { "id": "medium", "label": "中辣", "priceModifier": 0 },
+            { "id": "hot", "label": "大辣", "priceModifier": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken-nuggets",
+      "categoryId": "fried-chicken",
+      "name": "雞塊 (10塊)",
+      "description": "酥脆可口的雞塊",
+      "price": 60,
+      "available": true
+    },
+    {
+      "id": "chicken-wings",
+      "categoryId": "fried-chicken",
+      "name": "雞翅 (3支)",
+      "description": "香酥雞翅",
+      "price": 55,
+      "available": true,
+      "options": [
+        {
+          "id": "spicy-level",
+          "name": "辣度",
+          "type": "single",
+          "required": true,
+          "choices": [
+            { "id": "no-spicy", "label": "不辣", "priceModifier": 0 },
+            { "id": "mild", "label": "微辣", "priceModifier": 0 },
+            { "id": "medium", "label": "中辣", "priceModifier": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "french-fries",
+      "categoryId": "side-dishes",
+      "name": "薯條",
+      "description": "金黃酥脆薯條",
+      "price": 40,
+      "available": true,
+      "options": [
+        {
+          "id": "seasoning",
+          "name": "調味",
+          "type": "single",
+          "required": false,
+          "choices": [
+            { "id": "original", "label": "原味", "priceModifier": 0 },
+            { "id": "bbq", "label": "烤肉", "priceModifier": 5 },
+            { "id": "cheese", "label": "起司", "priceModifier": 10 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweet-potato-fries",
+      "categoryId": "side-dishes",
+      "name": "地瓜薯條",
+      "description": "健康美味的地瓜條",
+      "price": 45,
+      "available": true
+    },
+    {
+      "id": "onion-rings",
+      "categoryId": "side-dishes",
+      "name": "洋蔥圈",
+      "description": "香脆洋蔥圈",
+      "price": 50,
+      "available": true
+    },
+    {
+      "id": "black-tea",
+      "categoryId": "beverages",
+      "name": "紅茶 (大)",
+      "description": "古早味紅茶",
+      "price": 25,
+      "available": true,
+      "options": [
+        {
+          "id": "sugar-level",
+          "name": "甜度",
+          "type": "single",
+          "required": true,
+          "choices": [
+            { "id": "no-sugar", "label": "無糖", "priceModifier": 0 },
+            { "id": "half-sugar", "label": "半糖", "priceModifier": 0 },
+            { "id": "normal-sugar", "label": "正常糖", "priceModifier": 0 }
+          ]
+        },
+        {
+          "id": "ice-level",
+          "name": "冰塊",
+          "type": "single",
+          "required": true,
+          "choices": [
+            { "id": "no-ice", "label": "去冰", "priceModifier": 0 },
+            { "id": "less-ice", "label": "少冰", "priceModifier": 0 },
+            { "id": "normal-ice", "label": "正常冰", "priceModifier": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "green-tea",
+      "categoryId": "beverages",
+      "name": "綠茶 (大)",
+      "description": "清爽綠茶",
+      "price": 25,
+      "available": true,
+      "options": [
+        {
+          "id": "sugar-level",
+          "name": "甜度",
+          "type": "single",
+          "required": true,
+          "choices": [
+            { "id": "no-sugar", "label": "無糖", "priceModifier": 0 },
+            { "id": "half-sugar", "label": "半糖", "priceModifier": 0 },
+            { "id": "normal-sugar", "label": "正常糖", "priceModifier": 0 }
+          ]
+        },
+        {
+          "id": "ice-level",
+          "name": "冰塊",
+          "type": "single",
+          "required": true,
+          "choices": [
+            { "id": "no-ice", "label": "去冰", "priceModifier": 0 },
+            { "id": "less-ice", "label": "少冰", "priceModifier": 0 },
+            { "id": "normal-ice", "label": "正常冰", "priceModifier": 0 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cola",
+      "categoryId": "beverages",
+      "name": "可樂",
+      "description": "冰涼可樂",
+      "price": 30,
+      "available": true
+    }
+  ]
+}
