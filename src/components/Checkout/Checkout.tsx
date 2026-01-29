@@ -1,7 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { useCart } from '../../context/CartContext';
 import { Order, PickupMethod } from '../../types';
-import { sendLineNotify, generateOrderId } from '../../utils/lineNotify';
+import { generateOrderId } from '../../utils/orderUtils';
 
 interface CheckoutProps {
   onGoBack: () => void;
@@ -42,10 +42,18 @@ const Checkout = ({ onGoBack, onOrderComplete }: CheckoutProps) => {
         status: 'pending',
       };
 
-      // 發送 LINE 通知
-      const success = await sendLineNotify(order);
+      // 呼叫後端 API 發送訂單
+      const response = await fetch('/api/order', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(order),
+      });
 
-      if (success) {
+      const result = await response.json();
+
+      if (result.success) {
         // 清空購物車
         clearCart();
         // 完成訂單
